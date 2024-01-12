@@ -26,11 +26,13 @@
     
     <!--mostrar imagenes-->
     <img src="Img/Imagen1.jpeg" /> <!--La imagen fue cargada anteriormente en la misma carpeta que el index-->
-    <!--Ajustar el tamaño de la imagen-->
+    <!--la propiedad action debe contener la ruta hacia el servidor->
+    <!-Ajustar el tamaño de la imagen-->
     <img src="Img/Imagen1.jpeg" width="400" height="400" />
 
     <!--FORMULARIOS-->
-    <form> <!--Agregar elementos de un formulario-->
+    <form action="/formulario" method="POST"> <!--Agregar elementos de un formulario y hacia dónde se irá dicha información-->
+        <!--también se debe indicar el método para poder enviar los datos (a través de la URL(get))(se guarda(post))-->
         <label>Nombre</label> <!--Etiqueta-->
         <input/> <!--Caja de texto--> <br>
         <label for="nombre">Nombre</label> <!--Poner foco a la caja de texto aunque presione sobre la etiqueta-->
@@ -54,6 +56,18 @@
         <input type="number" name="input6"/> <br>
         <input type="radio" name="input7"/> <br>
         <input type="image" name="input8"/> <br>
+        <!--existen muchos más...-->
+        <label for="apellido"> Apellido </label> 
+        <input type="text" id="apellido" name="apellido" placeholder="Pon tu apellido"/> <br>
+        <!--TEXT AREA, Propiedades similares al input text, pero texto mas extenso-->
+        <label for="comentario">Comentario</label>
+        <textarea  cols="60" rows="10" id="comentario" placeholder="Ingrese comentario" name="Comentario">Este es un valor por defecto</textarea> <br>
+        <!--BOTÓN PARA QUE TODO LO RECOPILADO DEL FORMULARIO SE ENVÍE A-->
+        <input type="submit"/> <br>
+        <!--VALORES POR DEFECTO A LOS FORMULARIOS-->
+        <label for="apellidoSegundo"> Segundo apellido </label> 
+        <input value="de" type="text" id="apellido" name="apellido" placeholder="Pon tu apellido"/> <br>
+        <!--CERTIFICADOS DE ENCRIPTACIÓN DE ENVÍO DE DATOS-->
     </form>
 
     
