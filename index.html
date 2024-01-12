@@ -76,12 +76,36 @@
         <!--CERTIFICADOS DE ENCRIPTACIÓN DE ENVÍO DE DATOS-->
     </form>
 <!--LISTAS-->
-<ul> <!--Lista no ordenada-->
+<ul> <!--UnordenedList-Lista no ordenada-->
     <li>Elemento 1</li> <!--ListItem, elemento de la lista-->
     <li>Elemento 2</li>
     <li>Elemento 3</li>
     <li>Elemento 4</li>
 </ul>
-    
+<ol> <!--OrdenedList-Lista ordenada-->
+    <li>Elemento 1</li> <!--ListItem, elemento de la lista-->
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ol>
+<ol>
+    <li value="50">Elemento 1</li> <!--Ordenar manualmente una lista, comienza desde el valor que le indique-->
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ol>
+<!--LISTAS ANIDADAS-->
+<ol>
+    <li value="50">Elemento i</li> <!--Ordenar manualmente una lista, comienza desde el valor que le indique-->
+    <li>Elemento ii</li>
+    <li>Elemento iii</li>
+    <li>
+        <ol>
+            <li style="list-style-type: lower-alpha;">sub elemento 1</li> <!--el type lower alpha es para poner los sub elementos en letras, si se desea otro simplemente se busca en la propiedad-->
+            <li style="list-style-type:lower-greek;">sub elemento 2</li>
+            <li style="list-style-type:initial;">sub elemento 3</li>
+        </ol>
+    </li>
+</ol>
 </body>
 </html>
