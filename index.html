@@ -2,6 +2,12 @@
 <html> <!--Etiqueta raiz de html-->
 <head> <!-- Caracteristicas principales de nuestra página web -->
     <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        } 
+    </style>
+    <!--Dar estilo a todas las tablas contenidas en la pagina web-->
 </head>
 <body> <!--todo el contenido de nuestra web-->
     <h1>Mi primera chamba</h1> <!--indicar solamente titulos-->
@@ -107,5 +113,42 @@
         </ol>
     </li>
 </ol>
+<!--TABLAS-->
+<table style="width: 500px;"> <!--style="border: 1px solid black, Style para darle mas formato sw tabla-->
+    <thead> <!--Agrupar elementos de la cabecera de nuestras tablas, esto puede ayudar para darle formato diferente al del cuarpo de la tabla y se facil su distinción-->
+     <tr> <!--TABLE ROW (FILA DE TABLAS)-->
+        <th> <!--TableHead-Cabecera de tabla--> <!--Las cabeceras (th) son propircionales a las filas (tr)-->
+           Precio 
+        </th>
+        <th>Producto</th>
+     </tr>
+    </thead>
+    <tbody> <!--Agrupar los elementos que pertenecen al cuerpo de la tabla-->
+        <tr>
+            <td>Gratis</td>
+            <td> <!--TableDefinition-Dar definiciones a nuestra tabla-->
+            hola bits
+            </td>
+        </tr>
+        <tr>
+            <td>$20,394</td>
+            <td> <!--TableDefinition-Dar definiciones a nuestra tabla-->
+            vinyl de Michael
+            </td>
+        </tr>
+        <tr>
+            <td> $12,385</td>
+            <td> <!--TableDefinition-Dar definiciones a nuestra tabla-->
+            todas la discografía de Miahcel
+            </td>
+        </tr>
+     </tr>
+    </tbody>
+    <tfoot> <!--Pie de tabla (para agregar totales etc)-->
+        <td>Total:$234</td>
+        <td>Total: $44</td>
+    </tfoot>
+</table>
+
 </body>
 </html>
