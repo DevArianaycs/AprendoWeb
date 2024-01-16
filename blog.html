@@ -2,22 +2,23 @@
 <html>
 <head>
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css"/>
 </head>
 <body>
     <header> <!--Agrupar links, imágenes o logos, se pueden crear tantas como deseemos, siempre y cuando (no haya headers anidados y no colocar un header dentro de un footer)-->
-        <h1>Blog de Ariana</h1>
+        <h1 id="titulo">Blog de Ariana</h1> <!--Con identificador o atributo-->
     </header>
     <div>
-        <p>Párrafo dentro de un div</p>
+        <p></p> <!--Se utiliza para dividir contenido y poder agruparlo en secciones, se pueden tener div dentro de otra etiqueta div y así sucesivamente-->
     </div>
     <section> <!--Definir secciones de nuestra app, dentro de estas se colocan todas las etiquetas deseadas-->
-        <article> <!--definir contenido independiente (posts de un blog con titulo, descrpicion, imagen o parrafos. historia de noticias, para enmarcar posts en redes sociales etc)-->
+        <article class="post" id="dangerous"> <!--definir contenido independiente (posts de un blog con titulo, descrpicion, imagen o parrafos. historia de noticias, para enmarcar posts en redes sociales etc)-->
             <h2>Álbum Dangerous- 1991</h2>
             <p>Tesoros Ocultos en 'Dangerous' de Michael Jackson: Un Vistazo Profundo al Álbum que Redefinió el Pop. Este artículo explora las joyas menos conocidas de la obra maestra de Michael Jackson, 'Dangerous'.</p>
             <img src="Img/Dangerous.jpg" width="400" />
-            <p>Dangerous", el icónico álbum de Michael Jackson, se erige como un monumento en la historia de la música pop. Este artículo se sumerge en los recovecos menos explorados de esta obra maestra, destacando las joyas ocultas que han permanecido en la penumbra de su popularidad. Desde las colaboraciones vanguardistas que desafiaron las convenciones del momento, hasta las letras profundas que revelan capas inexploradas de la mente del Rey del Pop, cada rincón de "Dangerous" es un testimonio de la genialidad musical de Michael Jackson. Explore con nosotros la experimentación sonora que caracteriza a este álbum, descubriendo cómo su impacto perdura, dejando una huella indeleble en la evolución de la música contemporánea. En este viaje, nos sumergimos en la esencia misma de un álbum que no solo redefinió el pop, sino que también dejó un legado perdurable en la vasta obra artística de Michael Jackson.</p>
+            <p>"Dangerous", el icónico álbum de Michael Jackson, se erige como un monumento en la historia de la música pop. Este artículo se sumerge en los recovecos menos explorados de esta obra maestra, destacando las joyas ocultas que han permanecido en la penumbra de su popularidad. Desde las colaboraciones vanguardistas que desafiaron las convenciones del momento, hasta las letras profundas que revelan capas inexploradas de la mente del Rey del Pop, cada rincón de "Dangerous" es un testimonio de la genialidad musical de Michael Jackson. Explore con nosotros la experimentación sonora que caracteriza a este álbum, descubriendo cómo su impacto perdura, dejando una huella indeleble en la evolución de la música contemporánea. En este viaje, nos sumergimos en la esencia misma de un álbum que no solo redefinió el pop, sino que también dejó un legado perdurable en la vasta obra artística de Michael Jackson.</p>
         </article>
-        <article> <!--definir contenido independiente (posts de un blog con titulo, descrpicion, imagen o parrafos. historia de noticias, para enmarcar posts en redes sociales etc)-->
+        <article class="post" id="history"> <!--class-post es para darle una definición a los articulos, para que después con javascript o css puedan ser seleccionados-->
             <h2>Álbum HIStory. Past, Present and Future- 1995</h2>
             <p>HIStory": Un Viaje a Través de la Épica Musical de Michael Jackson. Este artículo destapa los secretos y la grandeza detrás del álbum monumental "HIStory". </p>
             <img src="Img/HIStory.jpeg" width="400" />
@@ -25,7 +26,7 @@
                 Este álbum no se limita a la música; es una narrativa en sí mismo. Desde los temas sociales que aborda hasta las controversias personales que lo rodean, cada pista revela capas profundas de la vida y la percepción de Michael Jackson. "HIStory" no solo documenta la evolución artística del artista, sino que también deja una marca indeleble en la historia de la música pop.
                 Acompáñanos en este fascinante recorrido mientras exploramos la riqueza de sonidos, las letras impactantes y la ambición creativa que convierten a "HIStory" en un testimonio perdurable del genio musical de Michael Jackson. Este álbum va más allá de las melodías; es una declaración de la singularidad y la maestría de un artista que ha dejado una huella imborrable en la historia de la música.</p>
         </article>
-        <article> <!--definir contenido independiente (posts de un blog con titulo, descrpicion, imagen o parrafos. historia de noticias, para enmarcar posts en redes sociales etc)-->
+        <article class="post" id="thriller"> <!--definir contenido independiente (posts de un blog con titulo, descrpicion, imagen o parrafos. historia de noticias, para enmarcar posts en redes sociales etc)-->
             <h2>Thriller- 1982</h2>
             <p>"Thriller": Más Allá del Éxito, una Inmersión en la Leyenda de Michael Jackson. Este artículo se aventura en el corazón del álbum que redefinió la música pop, desentrañando los secretos detrás de cada nota y la magia que convirtió a "Thriller" en un fenómeno cultural.</p>
             <img src="Img/Thriller.jpeg" width="400" />
@@ -33,6 +34,7 @@
         </article>
     </section>
     <footer><!--Colocar un pie de página de la página web (copyright, inf de contacto, del sitio, links para regresar, inf de autor etc)-->
+        <a href="#titulo">Ir al comienzo</a> <!--Gracias a esta propiedad y a que se le agregó un id a la sección de titulo, es que al dar click se puede regresar a ese lugar en específico-->
         <a href="mailto:arianaycs15@gmail.com">Puedes contactarme aquí</a> <!--Para que abra el correo inmediatamente para poder mandar un mail a ese correo (mailto)-->
         <p>Copyright 2024</p>
     </footer>
