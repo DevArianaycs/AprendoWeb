@@ -1,7 +1,10 @@
+#body{
+    background-color: black;
+}
 #titulo{
     color: white;
     border-radius: 5px;
-    background-color: darkolivegreen;
+    background-color: rgba(98, 202, 69, 0.2);
     padding: 10px 25px 35px 15px;
     font-size: 50;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,17 +19,18 @@
     font-size: 1rem;
     text-align: justify;
     line-height: 1.5;
-    background-color: rgb(41, 41, 41 );
+    background-color: rgb(41, 41, 41);
 }
 #dangerous{
     border-style:solid ;
-    border-color: coral;
+    border-color: whitesmoke;
+    
 }
 #history{
     border-style: solid;
-    border-color: darkred;
+    border-color: whitesmoke;
 }
 #thriller{
     border-style: solid;
-    border-color: darkolivegreen;
+    border-color: whitesmoke;
 }
