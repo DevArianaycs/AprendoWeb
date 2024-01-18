@@ -1,5 +1,6 @@
 #body{
     background-color: black;
+    color:white;
 }
 #titulo{
     color: white;
@@ -11,7 +12,7 @@
     text-align: center;
 }
 .post{
-    color: white;
+    border: solid 1px white;
     border-radius: 5px;
     margin: 15px 20px 25px 30px ; 
     padding: 30px 25px 20px 15px; 
@@ -33,4 +34,25 @@
 #thriller{
     border-style: solid;
     border-color: whitesmoke;
+}
+a:link{
+    color:white;
+}
+a:hover{
+    color: cadetblue;
+}
+a:visited{
+    color:blueviolet;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: solid 1px white;
+    padding: 3px;;
+}
+th{
+    background-color: white;
+    color: black;
 }
