@@ -1,4 +1,5 @@
 #body{
+    margin: 0;
     background-color: black;
     color:white;
 }
@@ -10,6 +11,7 @@
     font-size: 50;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0 0;
 }
 .post{
     border: solid 1px white;
@@ -21,6 +23,7 @@
     text-align: justify;
     line-height: 1.5;
     background-color: rgb(41, 41, 41);
+    cursor: pointer;
 }
 #dangerous{
     border-style:solid ;
@@ -55,4 +58,18 @@ th,td{
 th{
     background-color: white;
     color: black;
+}
+tr:hover{ /*Que la fila se seleccione al posicionar el mouse*/
+    background-color: white;
+    color: black;
+    cursor:pointer/*colocar la manita cuando se pase el mouse por encima*/
+}
+#pie{
+    background-color: rgba(98, 202, 69, 0.2);
+}
+#irTitulo{
+    text-align: left;
+}
+#contacto{
+    float: right;
 }
